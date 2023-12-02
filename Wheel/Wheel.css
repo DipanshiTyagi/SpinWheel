@@ -1,0 +1,65 @@
+.wheel-container {
+  text-align: center;
+}
+
+.centered-wheel {
+  position: relative;
+  display: inline-block;
+}
+
+.wheel{
+  position: relative; 
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.spin-button {
+  position: absolute;
+  top: 71%;
+  left: 62%;
+  transform: translate(-10%, -50%);
+  padding: 10px 2px;
+  font-size: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: silver;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+  
+}
+
+.spin-button.moved{
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  
+}
+
+.dis {
+  font-size: 50px;
+  color: lightcoral;
+  margin-top: 200px;
+  text-align: center;
+}
+
+
+/* Adjust the position and size of the wheel image as needed */
+.spinning-wheel {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spin 4s linear infinite;
+  opacity: 79%;
+  
+  
+}
+
+@keyframes spin {
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
